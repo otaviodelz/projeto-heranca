@@ -25,22 +25,40 @@ public class GerenciarControlePonto {
         rpg.setFunc(gerente);
         rpg.setDataRegistro(LocalDate.of(2020, 6, 15));
         rpg.setHoraEntrada(LocalDateTime.of(2020, 6, 15, 8, 15));
-        rpg.setHoraSaida(LocalDateTime.of(2020, 6, 15, 6, 00));
         rpg.apresentarRegistroPonto();
 
         RegistroPonto rps = new RegistroPonto();
         rps.setFunc(secretaria);
         rps.setDataRegistro(LocalDate.of(2020, 6, 16));
         rps.setHoraEntrada(LocalDateTime.of(2020, 6, 16, 8, 00));
-        rps.setHoraSaida(LocalDateTime.of(2020, 6, 16, 5, 45));
         rps.apresentarRegistroPonto();
 
         RegistroPonto rpo = new RegistroPonto();
         rpo.setFunc(operador);
         rpo.setDataRegistro(LocalDate.of(2020, 6, 17));
         rpo.setHoraEntrada(LocalDateTime.of(2020, 6, 17, 7, 45));
-        rpo.setHoraSaida(LocalDateTime.of(2020, 6, 17, 6, 15));
         rpo.apresentarRegistroPonto();
+
+        RegistroPonto rpgSaida = new RegistroPonto();
+        rpgSaida.setFunc(gerente);
+        rpgSaida.setDataRegistro(LocalDate.of(2020, 6, 15));
+        rpgSaida.setHoraEntrada(LocalDateTime.of(2020, 6, 15, 8, 15));
+        rpgSaida.setHoraSaida(LocalDateTime.of(2020, 6, 15, 18, 00));
+        rpgSaida.apresentarRegistroPonto();
+
+        RegistroPonto rpsSaida = new RegistroPonto();
+        rpsSaida.setFunc(secretaria);
+        rpsSaida.setDataRegistro(LocalDate.of(2020, 6, 16));
+        rpsSaida.setHoraEntrada(LocalDateTime.of(2020, 6, 16, 8, 00));
+        rpsSaida.setHoraSaida(LocalDateTime.of(2020, 6, 16, 17, 45));
+        rpsSaida.apresentarRegistroPonto();
+
+        RegistroPonto rpoSaida = new RegistroPonto();
+        rpoSaida.setFunc(operador);
+        rpoSaida.setDataRegistro(LocalDate.of(2020, 6, 17));
+        rpoSaida.setHoraEntrada(LocalDateTime.of(2020, 6, 17, 7, 45));
+        rpoSaida.setHoraSaida(LocalDateTime.of(2020, 6, 17, 18, 15));
+        rpoSaida.apresentarRegistroPonto();
 
     }
 }
